@@ -15,7 +15,7 @@ namespace Arbetssokande.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application descr22iption page.";
 
             return View();
         }
