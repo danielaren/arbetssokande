@@ -53,7 +53,7 @@ namespace Arbetssokande.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Invalid username or password.");
+                    ModelState.AddModelError("", "Fel användarnamn eller lösenord.");
                 }
             }
 
@@ -119,10 +119,10 @@ namespace Arbetssokande.Controllers
         public ActionResult Manage(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-                : message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-                : message == ManageMessageId.Error ? "An error has occurred."
+                message == ManageMessageId.ChangePasswordSuccess ? "Ditt lösenord har ändrats."
+                : message == ManageMessageId.SetPasswordSuccess ? "Ditt lösenord har ställts in."
+                : message == ManageMessageId.RemoveLoginSuccess ? "Den externa servicen har tagits bort."
+                : message == ManageMessageId.Error ? "Ett fel uppstod."
                 : "";
             ViewBag.HasLocalPassword = HasPassword();
             ViewBag.ReturnUrl = Url.Action("Manage");

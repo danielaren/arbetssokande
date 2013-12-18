@@ -15,14 +15,14 @@ namespace Arbetssokande.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application page.";
+            ViewBag.Message = "";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "";
 
             return View();
         }
